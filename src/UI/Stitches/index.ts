@@ -2,10 +2,9 @@ import { createStitches, globalCss } from '@stitches/react'
 
 export const { styled, css } = createStitches({
   media: {
-    xs: '(max-width: 575.98px)', // Extra small
-    s: '(min-width: 576px) and (max-width: 767.98px)', // Small
-    m: '(min-width: 768px) and (max-width: 991.98px)', // Medium
-    l: '(min-width: 992px) and (max-width: 1199.98px)', // Large
+    s: '(min-width: 576px)', // Small
+    m: '(min-width: 768px)', // Medium
+    l: '(min-width: 992px)', // Large
     xl: '(min-width: 1200px)' // Extra large
   },
 
@@ -13,6 +12,7 @@ export const { styled, css } = createStitches({
     colors: {
       primary: '#1E1E1E',
       secondary: '#F5F5F5',
+      tertiary: '#c2c2c4',
       black: '#000000',
       white: '#FFFFFF'
     },
