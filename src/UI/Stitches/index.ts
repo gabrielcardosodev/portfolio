@@ -70,7 +70,20 @@ export const globalStyles = globalCss({
     lineHeight: 1.15,
     webkitTextSizeAdjust: '100%',
     fontFamily: 'Montserrat, sans-serif',
-    fontSize: '$default'
+    fontSize: '$default',
+    '::-webkit-scrollbar': {
+      width: '0.5rem'
+    },
+
+    '::-webkit-scrollbar-track': {
+      backgroundColor: '#black',
+      borderRadius: '0.25rem'
+    },
+
+    '::-webkit-scrollbar-thumb': {
+      backgroundColor: '#c2c2c4',
+      borderRadius: '0.25rem'
+    }
   },
 
   body: {
