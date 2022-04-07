@@ -1,12 +1,13 @@
 import { styled } from '../../UI/Stitches/index'
 
-export const Container = styled('div', {
+export const Container = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
   textAlign: 'center',
-  margin: '4rem auto',
+  padding: '2rem',
+  margin: '5rem auto',
   color: '$secondary',
 
   h1: {
@@ -19,7 +20,8 @@ export const Container = styled('div', {
     fontSize: '1.5rem',
     fontWeight: '500',
     color: '$tertiary',
-    marginTop: '$4'
+    marginTop: '$4',
+    marginBottom: '$10'
   },
 
   '.contact': {
@@ -34,7 +36,9 @@ export const Container = styled('div', {
 
     p: {
       fontSize: '$default',
-      fontWeight: '500'
+      fontWeight: '500',
+
+      '& + &': { marginTop: '$4' }
     }
   },
 
@@ -59,7 +63,7 @@ export const Container = styled('div', {
       border: '1px solid $secondary',
       padding: '0.65rem 0.75rem',
       borderRadius: '0.50rem',
-      transition: 'all 0.3s ease-in-out',
+      transition: 'all $slow ease-in-out',
 
       '&:hover': {
         color: '$black',
