@@ -18,22 +18,21 @@ export const Container = styled('section', {
     borderRadius: '.5rem',
     padding: '1rem',
     marginTop: '2rem',
-    backgroundColor: '$secondary',
+    backgroundColor: '$black',
     transition: 'all $slow ease-in-out',
 
-    '&:hover': {
-      backgroundColor: '$black',
+    a: {
       color: '$secondary',
+      fontWeight: '500'
+    },
+
+    '&:hover': {
+      backgroundColor: '$secondary',
       boxShadow: '0 0.625rem 1.5625rem rgb(0 0 0 / 80%)',
 
       a: {
-        color: '$secondary'
+        color: '$primary'
       }
-    },
-
-    a: {
-      color: '$primary',
-      fontWeight: '500'
     }
   }
 })
