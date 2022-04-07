@@ -94,7 +94,8 @@ export const Card = styled('div', {
 
   '&:hover': {
     backgroundColor: '$primary',
-    boxShadow: '0 0.625rem 1.5625rem rgb(0 0 0 / 80%)'
+    boxShadow: '0 0.625rem 1.5625rem rgb(0 0 0 / 80%)',
+    transform: 'scale(1.05)'
   },
 
   img: {
