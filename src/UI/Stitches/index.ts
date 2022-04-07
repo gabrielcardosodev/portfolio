@@ -13,7 +13,7 @@ export const { styled, css } = createStitches({
       primary: '#1E1E1E',
       secondary: '#F5F5F5',
       tertiary: '#c2c2c4',
-      black: '#000000',
+      black: '#0A0E14',
       white: '#FFFFFF'
     },
 
@@ -61,7 +61,9 @@ export const { styled, css } = createStitches({
 
 export const globalStyles = globalCss({
   '*': {
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+    margin: 0,
+    padding: 0
   },
 
   html: {
@@ -72,9 +74,7 @@ export const globalStyles = globalCss({
   },
 
   body: {
-    backgroundColor: '$black',
-    margin: 0,
-    padding: 0
+    backgroundColor: '$black'
   },
 
   main: {
