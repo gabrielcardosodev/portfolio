@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import AboutDescription from './components/AboutDescription'
 import ProjectsCards from './components/ProjectsCards'
+import Formation from './components/Formation'
 
 export function App() {
   return (
@@ -8,6 +9,7 @@ export function App() {
       <Navbar />
       <AboutDescription />
       <ProjectsCards />
+      <Formation />
     </>
   )
 }
