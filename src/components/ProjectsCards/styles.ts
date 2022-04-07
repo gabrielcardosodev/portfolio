@@ -7,7 +7,6 @@ export const Container = styled('section', {
   padding: '2rem',
 
   h1: {
-    fontSize: '$xlarge',
     padding: '2rem'
   },
 
