@@ -84,6 +84,24 @@ const ProjectsCards = () => {
             </a>
           </button>
         </S.Card>
+
+        <S.Card>
+          <img
+            src="https://i.imgur.com/vJIKW5a.jpg"
+            alt="Imagem da página Home do projeto dtmoney"
+          />
+          <h2>Em produção</h2>
+          <p>Aplicação em desenvolvimento.</p>
+        </S.Card>
+
+        <S.Card>
+          <img
+            src="https://i.imgur.com/vJIKW5a.jpg"
+            alt="Imagem da página Home do projeto dtmoney"
+          />
+          <h2>Em produção</h2>
+          <p>Aplicação em desenvolvimento.</p>
+        </S.Card>
       </S.Cards>
       <button>
         <a href="https://www.github.com/gabrielcardosodev" target="_blank">
