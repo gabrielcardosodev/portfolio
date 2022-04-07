@@ -3,6 +3,7 @@ import AboutDescription from './components/AboutDescription'
 import ProjectsCards from './components/ProjectsCards'
 import Formation from './components/Formation'
 import Skills from './components/Skills'
+import Footer from './components/Footer'
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
       <ProjectsCards />
       <Formation />
       <Skills />
+      <Footer />
     </>
   )
 }
