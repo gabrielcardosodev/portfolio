@@ -16,9 +16,10 @@ const AboutDescription = () => {
 
       <div>
         <span>
-          Bem vindo ao meu portfólio! Meu nome é Gabriel, tenho 22 anos sou e
-          carioca da gema. Estudante de desenvolvimento web há um ano,
-          apaixonado por tecnologia e conhecimento.
+          Bem vindo ao meu portfólio!
+          <br /> Meu nome é Gabriel, tenho 22 anos e carioca da gema. Estudante
+          de desenvolvimento web há um ano, apaixonado por tecnologia e
+          conhecimento.
         </span>
 
         <div className="socials">
