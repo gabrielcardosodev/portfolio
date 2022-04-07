@@ -24,6 +24,13 @@ export const Container = styled('section', {
     marginBottom: '$10'
   },
 
+  p: {
+    fontSize: '$default',
+    fontWeight: '500',
+
+    '& + &': { marginTop: '$4' }
+  },
+
   '.contact': {
     '&:after': {
       content: '""',
@@ -32,13 +39,6 @@ export const Container = styled('section', {
       height: '1px',
       backgroundColor: '$secondary',
       margin: '$16 0'
-    },
-
-    p: {
-      fontSize: '$default',
-      fontWeight: '500',
-
-      '& + &': { marginTop: '$4' }
     }
   },
 
@@ -47,7 +47,8 @@ export const Container = styled('section', {
     display: 'block',
     fontWeight: '500',
     maxWidth: '400px',
-    width: 'fit-content'
+    width: 'fit-content',
+    marginTop: '$10'
   },
 
   '.socials': {
@@ -70,6 +71,23 @@ export const Container = styled('section', {
         backgroundColor: '$secondary',
         border: '1px solid $black'
       }
+    }
+  },
+  '@m': {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: '5rem',
+
+    h1: {
+      fontSize: '4rem'
+    },
+
+    p: {
+      fontSize: '$medium'
+    },
+
+    span: {
+      fontSize: '$medium'
     }
   }
 })
