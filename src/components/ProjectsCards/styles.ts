@@ -10,26 +10,28 @@ export const Container = styled('section', {
     padding: '2rem'
   },
 
-  '> button': {
+  '> a': {
+    display: 'inline-block',
     cursor: 'pointer',
-    border: 'none',
-    outline: 'none',
     borderRadius: '.5rem',
-    padding: '1rem',
+    padding: '1.5rem',
     marginTop: '2rem',
     backgroundColor: '$black',
     transition: 'all $slow ease-in-out',
 
-    a: {
+    button: {
       color: '$secondary',
-      fontWeight: '500'
+      fontSize: '$medium',
+      border: 'none',
+      outline: 'none',
+      backgroundColor: 'transparent'
     },
 
     '&:hover': {
       backgroundColor: '$secondary',
       boxShadow: '0 0.625rem 1.5625rem rgb(0 0 0 / 80%)',
 
-      a: {
+      button: {
         color: '$primary'
       }
     }
@@ -48,6 +50,7 @@ export const Cards = styled('div', {
     cursor: 'pointer',
     border: 'none',
     outline: 'none',
+    fontWeight: '500',
     borderRadius: '.5rem',
     marginTop: '1.5rem',
     padding: '1rem 4rem',
@@ -88,7 +91,7 @@ export const Card = styled('div', {
   padding: '1rem',
   borderBottom: '1px solid transparent',
   borderRadius: '0.5rem',
-  transition: 'all $slow ease-in-out',
+  transition: 'all $medium ease-in-out',
 
   '&:hover': {
     backgroundColor: '$primary',

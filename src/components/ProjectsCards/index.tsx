@@ -2,12 +2,12 @@ import * as S from './styles'
 
 const ProjectsCards = () => {
   return (
-    <S.Container>
+    <S.Container id="projects">
       <h1>Projetos Recentes</h1>
       <S.Cards>
         <S.Card>
           <img
-            src="https://i.imgur.com/V1pZgYT.png"
+            src="https://i.imgur.com/oY0iupg.png"
             alt="Imagem da página Home do projeto Letmeask"
           />
           <h2>Letmeask</h2>
@@ -16,11 +16,9 @@ const ProjectsCards = () => {
             que o dono de uma sala interaja com seu público de uma forma mais
             organizada.
           </p>
-          <button>
-            <a href="https://letmeask-fdd44.web.app/" target="_blank">
-              Acessar
-            </a>
-          </button>
+          <a href="https://letmeask-fdd44.web.app/" target="_blank">
+            <button>Acessar</button>
+          </a>
         </S.Card>
 
         <S.Card>
@@ -33,14 +31,12 @@ const ProjectsCards = () => {
             Grapes Finance é uma aplicação web que consiste em te ajudar a
             organizar sua vida financeira.
           </p>
-          <button className="fix-button">
-            <a
-              href="https://gabrielcardosodev.github.io/GrapesFinances/"
-              target="_blank"
-            >
-              Acessar
-            </a>
-          </button>
+          <a
+            href="https://gabrielcardosodev.github.io/GrapesFinances/"
+            target="_blank"
+          >
+            <button className="fix-button">Acessar</button>
+          </a>
         </S.Card>
 
         <S.Card>
@@ -54,14 +50,13 @@ const ProjectsCards = () => {
             modelo e a cor da sua bicicleta, e assim, escolher a bicicleta que
             mais se adequa a você.
           </p>
-          <button>
-            <a
-              href="https://gabrielcardosodev.github.io/bikcraft-project/"
-              target="_blank"
-            >
-              Acessar
-            </a>
-          </button>
+
+          <a
+            href="https://gabrielcardosodev.github.io/bikcraft-project/"
+            target="_blank"
+          >
+            <button>Acessar</button>
+          </a>
         </S.Card>
 
         <S.Card>
@@ -75,20 +70,18 @@ const ProjectsCards = () => {
             manicure e pedicure de um salão do Rio de Janeiro. O site apresenta
             os serviços e redireciona o cliente para o Whatsapp do salão.
           </p>
-          <button>
-            <a
-              href="https://gabrielcardosodev.github.io/nailhealth/   "
-              target="_blank"
-            >
-              Acessar
-            </a>
-          </button>
+          <a
+            href="https://gabrielcardosodev.github.io/nailhealth/   "
+            target="_blank"
+          >
+            <button>Acessar</button>
+          </a>
         </S.Card>
 
         <S.Card>
           <img
             src="https://i.imgur.com/vJIKW5a.jpg"
-            alt="Imagem da página Home do projeto dtmoney"
+            alt="Imagem de um erro 404 not found"
           />
           <h2>Em produção</h2>
           <p>Aplicação em desenvolvimento.</p>
@@ -97,17 +90,15 @@ const ProjectsCards = () => {
         <S.Card>
           <img
             src="https://i.imgur.com/vJIKW5a.jpg"
-            alt="Imagem da página Home do projeto dtmoney"
+            alt="Imagem de um erro 404 not found"
           />
           <h2>Em produção</h2>
           <p>Aplicação em desenvolvimento.</p>
         </S.Card>
       </S.Cards>
-      <button>
-        <a href="https://www.github.com/gabrielcardosodev" target="_blank">
-          Acessar mais projetos
-        </a>
-      </button>
+      <a href="https://www.github.com/gabrielcardosodev" target="_blank">
+        <button>Acessar mais projetos</button>
+      </a>
     </S.Container>
   )
 }
