@@ -3,7 +3,7 @@ import { FaUserGraduate } from 'react-icons/fa'
 import * as S from './styles'
 const Formation = () => {
   return (
-    <S.Container>
+    <S.Container id="formation">
       <h1>Formação</h1>
       <S.Ignite>
         <div className="study-icon">
