@@ -1,152 +1,148 @@
-import { styled } from '../../UI/Stitches/index'
+import { keyframes } from '@stitches/react'
+import { styled } from '../../UI/Stitches'
 
-export const Header = styled('header', {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  height: '100px',
-  padding: '0 $16',
+export const NavContainer = styled('nav', {
+  width: '100%',
   backgroundColor: '$primary',
-
-  img: {
-    width: '130px',
-    height: '130px',
-    cursor: 'pointer'
-  },
-
-  '.nav-button': {
-    padding: '$2',
-    cursor: 'pointer',
-    visibility: 'visible',
-    opacity: 1,
-    backgroundColor: 'transparent',
-    color: '$secondary',
-    border: 'none',
-    outline: 'none'
-  },
+  display: 'flex',
+  flexDirection: 'column',
 
   '@m': {
-    height: '130px',
-
-    img: {
-      width: '180px',
-      height: '130px',
-      cursor: 'pointer'
-    },
-
-    '.nav-button': {
-      visibility: 'hidden',
-      opacity: '0'
-    }
+    height: '120px !important'
   },
 
-  '@l': {
-    height: '130px',
-
-    img: {
-      width: '180px',
-      height: '130px',
-      cursor: 'pointer'
-    },
-
-    '.nav-button': {
-      visibility: 'hidden',
-      opacity: '0'
-    }
-  },
-
-  '@xl': {
-    height: '130px',
-
-    img: {
-      width: '180px',
-      height: '130px',
-      cursor: 'pointer'
-    },
-
-    '.nav-button': {
-      visibility: 'hidden',
-      opacity: '0'
+  variants: {
+    height: {
+      true: {
+        height: '100vh'
+      },
+      false: {
+        height: '120px'
+      }
     }
   }
 })
 
-export const Nav = styled('nav', {
-  position: 'fixed',
-  top: '0',
-  left: '0',
-  height: '100%',
+export const NavLogoContainer = styled('div', {
+  flex: '30%',
+  display: 'flex',
+  alignItems: 'center',
+  paddingLeft: '20px'
+})
+
+export const NavLinksContainer = styled('div', {
+  display: 'flex',
+  flex: '70%',
+  justifyContent: 'flex-end',
+  paddingRight: '20px',
+
+  '@m': {
+    alignItems: 'center'
+  }
+})
+
+export const NavbarInnerContainer = styled('div', {
   width: '100%',
+  height: '120px',
+  display: 'flex'
+})
+
+export const NavLinks = styled('div', {
+  display: 'none',
+
+  '@m': {
+    display: 'flex'
+  }
+})
+
+export const NavLink = styled('a', {
+  color: '$secondary',
+  fontSize: '$large',
+  fontWeight: '$bold',
+  textDecoration: 'none',
+  marginRight: '20px',
+  transition: 'all $medium ease-in-out',
+  position: 'relative',
+
+  '&::after': {
+    content: '""',
+    width: '0',
+    height: '2px',
+    backgroundColor: '$tertiary',
+    position: 'absolute',
+    left: '0',
+    bottom: '-1rem',
+    transition: 'width $medium ease-in-out'
+  },
+
+  '&:hover': {
+    color: '$tertiary',
+
+    '&::after': {
+      width: '100%',
+      backgroundColor: '$tertiary'
+    }
+  }
+})
+
+export const NavOpenLinks = styled('a', {
+  color: '$secondary',
+  fontSize: '$large',
+  fontWeight: '$bold',
+  textDecoration: 'none',
+  marginRight: '20px',
+  transition: 'all $medium ease-in-out',
+  position: 'relative',
+
+  '&::after': {
+    content: '""',
+    width: '0',
+    height: '2px',
+    backgroundColor: '$tertiary',
+    position: 'absolute',
+    left: '0',
+    bottom: '-1rem',
+    transition: 'width $medium ease-in-out'
+  },
+
+  '&:hover': {
+    color: '$tertiary',
+
+    '&::after': {
+      width: '100%',
+      backgroundColor: '$tertiary'
+    }
+  }
+})
+
+export const Logo = styled('img', {
+  margin: '10px',
+  width: '180px',
+  height: 'auto'
+})
+
+export const OpenLinksButton = styled('button', {
+  margin: '3rem',
+  backgroundColor: '$primary',
+  border: 'none',
+  outline: 'none',
+  color: '$secondary',
+  fontSize: '$large',
+  cursor: 'pointer',
+
+  '@m': {
+    display: 'none'
+  }
+})
+
+export const NavOpenContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'center',
-  gap: '$16',
-  backgroundColor: '$primary',
-  transition: '0.2s',
-  transform: 'translateY(-100%)',
-
-  '&.active': {
-    transform: 'none'
-  },
-
-  a: {
-    color: '$secondary',
-    fontWeight: '500',
-    transition: 'filter 0.3s',
-    fontSize: '$large',
-
-    '&:hover': {
-      filter: 'brightness(0.8)',
-      textDecoration: 'underline'
-    }
-  },
-
-  '.nav-close-button': {
-    position: 'absolute',
-    top: '$16',
-    right: '$14'
-  },
+  margin: 'auto',
+  gap: '3rem',
 
   '@m': {
-    position: 'inherit',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    gap: '$12',
-    transform: 'none',
-
-    a: {
-      fontSize: '$medium'
-    }
-  },
-
-  '@l': {
-    position: 'inherit',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    gap: '$12',
-    transform: 'none',
-
-    a: {
-      fontSize: '$medium'
-    }
-  },
-
-  '@xl': {
-    position: 'inherit',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    gap: '$12',
-    transform: 'none',
-
-    a: {
-      fontSize: '$medium'
-    }
+    display: 'none'
   }
 })

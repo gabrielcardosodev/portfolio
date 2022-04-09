@@ -1,36 +1,42 @@
-import { useRef } from 'react'
+import { useState } from 'react'
+
 import { FaBars, FaTimes } from 'react-icons/fa'
 import logoImg from '../../assets/images/logo.svg'
+
 import * as S from './styles'
 
 const Navbar = () => {
-  const navRef = useRef<HTMLDivElement>(null)
-
-  function handleToggle() {
-    navRef.current?.classList.toggle('active')
-  }
+  const [navIsOpen, setNavIsOpen] = useState(false)
 
   return (
-    <S.Header>
-      <a href="/">
-        <img
-          src={logoImg}
-          alt="Logo de um quadrado com Gabriel escrito dentro desse quadrado"
-        />
-      </a>
-      <S.Nav ref={navRef}>
-        <a href="/">Sobre</a>
-        <a href="/projects">Projetos</a>
-        <a href="/formation">Formação</a>
-        <a href="/techs">Habilidades</a>
-        <button onClick={handleToggle} className="nav-button nav-close-button">
-          <FaTimes size={'1.5rem'} />
-        </button>
-      </S.Nav>
-      <button onClick={handleToggle} className="nav-button">
-        <FaBars size={'1.5rem'} />
-      </button>
-    </S.Header>
+    <S.NavContainer height={navIsOpen ? true : false}>
+      <S.NavbarInnerContainer>
+        <S.NavLogoContainer>
+          <a href="/">
+            <S.Logo src={logoImg} alt="Logo" />
+          </a>
+        </S.NavLogoContainer>
+        <S.NavLinksContainer>
+          <S.NavLinks>
+            <S.NavLink href="#about">Sobre</S.NavLink>
+            <S.NavLink href="#projects">Projetos</S.NavLink>
+            <S.NavLink href="#formation">Formação</S.NavLink>
+            <S.NavLink href="#techs">Habilidades</S.NavLink>
+          </S.NavLinks>
+        </S.NavLinksContainer>
+        <S.OpenLinksButton onClick={() => setNavIsOpen(!navIsOpen)}>
+          {navIsOpen ? <FaTimes /> : <FaBars />}
+        </S.OpenLinksButton>
+      </S.NavbarInnerContainer>
+      {navIsOpen && (
+        <S.NavOpenContainer>
+          <S.NavOpenLinks href="#about">Sobre</S.NavOpenLinks>
+          <S.NavOpenLinks href="#projects">Projetos</S.NavOpenLinks>
+          <S.NavOpenLinks href="#formation">Formação</S.NavOpenLinks>
+          <S.NavOpenLinks href="#techs">Habilidades</S.NavOpenLinks>
+        </S.NavOpenContainer>
+      )}
+    </S.NavContainer>
   )
 }
 
