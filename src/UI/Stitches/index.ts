@@ -71,6 +71,7 @@ export const globalStyles = globalCss({
     webkitTextSizeAdjust: '100%',
     fontFamily: 'Montserrat, sans-serif',
     fontSize: '$default',
+    scrollBehavior: 'smooth',
     '::-webkit-scrollbar': {
       width: '0.5rem'
     },
