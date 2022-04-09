@@ -28,7 +28,7 @@ export const Footer = styled('footer', {
       border: '1px solid $secondary',
       padding: '0.65rem 0.75rem',
       borderRadius: '0.50rem',
-      transition: 'all $slow ease-in-out',
+      transition: 'all $medium ease-in-out',
 
       '&:hover': {
         color: '$black',
