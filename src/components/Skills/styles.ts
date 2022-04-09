@@ -8,47 +8,45 @@ export const Container = styled('section', {
 })
 
 export const SkillsCards = styled('div', {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+  display: 'flex',
+  flexWrap: 'wrap',
+  gap: '1rem',
   alignItems: 'center',
-  justifyItems: 'center'
+  justifyContent: 'center'
 })
 
-export const Skill = styled('div', {
+export const Skill = styled('a', {
   marginTop: '2rem',
   display: 'flex',
   flexDirection: 'column',
+  gap: '1rem',
   alignItems: 'center',
   justifyContent: 'center',
   backgroundColor: '$black',
-  color: '$white',
+  color: '$secondary',
   width: '12rem',
   height: '12rem',
   border: '1px solid $secondary',
   borderRadius: '1rem',
-  transition: 'all $slow ease-in-out',
-
-  '&:hover': {
-    backgroundColor: '$primary',
-    border: '1px solid $black',
-    boxShadow: '0 0.625rem 1.5625rem rgb(0 0 0 / 80%)',
-    transform: 'scale(1.05)'
-  },
+  transition: 'all $medium ease-in-out',
+  cursor: 'pointer',
+  fontSize: '1.5rem',
+  fontWeight: '500',
 
   svg: {
     width: '3rem',
     height: '3rem'
   },
 
-  a: {
-    color: '$secondary',
-    marginTop: '1rem',
-    fontSize: '1.5rem',
-    fontWeight: '500',
-    transition: '$slow ease-in-out',
+  '&:hover': {
+    backgroundColor: '$primary',
+    border: '1px solid $black',
+    boxShadow: '0 0.625rem 1.5625rem rgb(0 0 0 / 80%)',
+    textDecoration: 'underline',
+    transform: 'scale(1.05)',
 
-    '&:hover': {
-      textDecoration: 'underline'
+    a: {
+      color: '$secondary'
     }
   }
 })

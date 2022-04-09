@@ -13,79 +13,61 @@ import * as S from './styles'
 const Skills = () => {
   return (
     <>
-      <S.Container>
+      <S.Container id="techs">
         <h1>Habilidades</h1>
         <S.SkillsCards>
-          <S.Skill>
+          <S.Skill
+            href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+            target="_blank"
+          >
             <FaHtml5 />
-            <a
-              href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
-              target="_blank"
-            >
-              HTML5
-            </a>
+            HTML5
           </S.Skill>
 
-          <S.Skill>
+          <S.Skill
+            href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+            target="_blank"
+          >
             <FaCss3 />
-            <a
-              href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
-              target="_blank"
-            >
-              CSS3
-            </a>
+            CSS3
           </S.Skill>
 
-          <S.Skill>
+          <S.Skill
+            href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+            target="_blank"
+          >
             <SiJavascript />
-            <a
-              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
-              target="_blank"
-            >
-              JavaScript
-            </a>
+            JavaScript
           </S.Skill>
 
-          <S.Skill>
+          <S.Skill href="https://www.typescriptlang.org/" target="_blank">
             <SiTypescript />
-            <a href="https://www.typescriptlang.org/" target="_blank">
-              TypeScript
-            </a>
+            TypeScript
           </S.Skill>
 
-          <S.Skill>
+          <S.Skill href="https://sass-lang.com/" target="_blank">
             <FaSass />
-            <a href="https://sass-lang.com/" target="_blank">
-              Sass
-            </a>
+            Sass
           </S.Skill>
 
-          <S.Skill>
+          <S.Skill href="https://styled-components.com/" target="_blank">
             <SiStyledcomponents />
-            <a href="https://styled-components.com/" target="_blank">
-              Styled Components
-            </a>
+            Styled Components
           </S.Skill>
 
-          <S.Skill>
+          <S.Skill href="https://git-scm.com/" target="_blank">
             <FaGit />
-            <a href="https://git-scm.com/" target="_blank">
-              Git
-            </a>
+            Git
           </S.Skill>
 
-          <S.Skill>
+          <S.Skill href="https://github.com/" target="_blank">
             <FaGithub />
-            <a href="https://github.com/" target="_blank">
-              Github
-            </a>
+            Github
           </S.Skill>
 
-          <S.Skill>
+          <S.Skill href="https://pt-br.reactjs.org/" target="_blank">
             <FaReact />
-            <a href="https://pt-br.reactjs.org/" target="_blank">
-              ReactJS
-            </a>
+            ReactJS
           </S.Skill>
         </S.SkillsCards>
       </S.Container>
