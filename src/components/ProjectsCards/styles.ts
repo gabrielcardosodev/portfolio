@@ -24,7 +24,8 @@ export const Container = styled('section', {
       fontSize: '$medium',
       border: 'none',
       outline: 'none',
-      backgroundColor: 'transparent'
+      backgroundColor: 'transparent',
+      cursor: 'pointer'
     },
 
     '&:hover': {
