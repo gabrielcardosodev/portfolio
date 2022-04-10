@@ -45,6 +45,11 @@ const Skills = () => {
             TypeScript
           </S.Skill>
 
+          <S.Skill href="https://pt-br.reactjs.org/" target="_blank">
+            <FaReact />
+            ReactJS
+          </S.Skill>
+
           <S.Skill href="https://sass-lang.com/" target="_blank">
             <FaSass />
             Sass
@@ -63,11 +68,6 @@ const Skills = () => {
           <S.Skill href="https://github.com/" target="_blank">
             <FaGithub />
             Github
-          </S.Skill>
-
-          <S.Skill href="https://pt-br.reactjs.org/" target="_blank">
-            <FaReact />
-            ReactJS
           </S.Skill>
         </S.SkillsCards>
       </S.Container>
