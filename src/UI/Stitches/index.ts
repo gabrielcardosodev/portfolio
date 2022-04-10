@@ -2,7 +2,7 @@ import { createStitches, globalCss } from '@stitches/react'
 
 export const { styled, css } = createStitches({
   media: {
-    s: '(min-width: 576px)', // Small
+    s: '(max-width: 767px)', // Small
     m: '(min-width: 768px)', // Medium
     l: '(min-width: 992px)', // Large
     xl: '(min-width: 1200px)' // Extra large
