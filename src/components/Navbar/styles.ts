@@ -9,6 +9,7 @@ export const Header = styled('header', {
   backgroundColor: '$primary',
   position: 'sticky',
   top: 0,
+  zIndex: 99999,
 
   img: {
     width: '120px',
