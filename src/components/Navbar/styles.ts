@@ -49,7 +49,6 @@ export const NavContainer = styled('nav', {
 })
 
 export const NavLinks = styled('a', {
-  marginRight: '2rem',
   color: '$secondary',
   fontSize: '$large',
   transition: 'color $medium ease-in-out',
@@ -75,7 +74,9 @@ export const NavLinks = styled('a', {
     }
   },
 
-  '@m': {}
+  '@m': {
+    marginRight: '2rem'
+  }
 })
 
 export const NavButton = styled('button', {
