@@ -8,6 +8,7 @@ export const Header = styled('header', {
   padding: '0 2rem',
   backgroundColor: '$primary',
   position: 'sticky',
+  boxShadow: '0 0.625rem 1.5625rem rgb(0 0 0 / 80%)',
   top: 0,
   zIndex: 99999,
 
