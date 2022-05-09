@@ -78,6 +78,10 @@ export const Cards = styled('div', {
     marginTop: '2.7rem'
   },
 
+  '.laletra-button': {
+    marginTop: '3.7rem'
+  },
+
   '@m': {
     display: 'flex',
     flexWrap: 'wrap',

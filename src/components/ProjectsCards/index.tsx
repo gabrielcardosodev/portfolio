@@ -86,7 +86,7 @@ const ProjectsCards = () => {
           <h2>Laletra</h2>
           <p>Contribuí no desenvolvimento do Frontend desse E-commerce.</p>
           <a href="https://laletra.com.br/" target="_blank">
-            <button className="fix-button">Acessar</button>
+            <button className="laletra-button">Acessar</button>
           </a>
         </S.Card>
 
