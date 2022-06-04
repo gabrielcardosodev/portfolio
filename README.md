@@ -34,10 +34,10 @@ Follow the steps below:
 
 ```bash
 # Install the dependencies
-$ yarn
+$ yarn or npm i
 
 # Start the project
-$ yarn start
+$ yarn dev or npm run dev
 ```
 
 The app will be available for access on your browser at http://localhost:3000
