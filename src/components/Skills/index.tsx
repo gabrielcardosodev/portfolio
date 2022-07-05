@@ -6,7 +6,7 @@ import {
   FaGithub,
   FaReact
 } from 'react-icons/fa'
-import { SiJavascript, SiTypescript, SiStyledcomponents } from 'react-icons/si'
+import { SiJavascript, SiTypescript, SiStyledcomponents, SiTailwindcss, SiGraphql, SiApollographql, SiFirebase } from 'react-icons/si'
 
 import * as S from './styles'
 
@@ -58,6 +58,26 @@ const Skills = () => {
           <S.Skill href="https://styled-components.com/" target="_blank">
             <SiStyledcomponents />
             Styled Components
+          </S.Skill>
+
+          <S.Skill href="https://tailwindcss.com/" target="_blank">
+            <SiTailwindcss />
+            Tailwind CSS
+          </S.Skill>
+
+          <S.Skill href="https://firebase.google.com/" target="_blank">
+            <SiFirebase />
+            Firebase
+          </S.Skill>
+
+          <S.Skill href="https://graphql.org/" target="_blank">
+            <SiGraphql />
+            Graphql
+          </S.Skill>
+
+          <S.Skill href="https://www.apollographql.com/" target="_blank">
+            <SiApollographql />
+            Apollo
           </S.Skill>
 
           <S.Skill href="https://git-scm.com/" target="_blank">
